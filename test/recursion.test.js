@@ -18,7 +18,7 @@ const {
 
 describe("Recursion", function () {
   context("Lesson Exercises", function () {
-    describe.skip(".countdown", function () {
+    describe(".countdown", function () {
       it("counts down to zero from the inputted number", function () {
         expect(countdown(0)).to.deep.equal([0]);
         expect(countdown(1)).to.deep.equal([1, 0]);
@@ -27,9 +27,9 @@ describe("Recursion", function () {
       });
     });
 
-    describe.skip(".getSum", function () {
+    describe(".getSum", function () {
       it("returns the sum of all the numbers in the array", function () {
-        expect(getSum([])).to.be.undefined;
+        expect(getSum([])).to.be.null;
         expect(getSum([0])).to.equal(0);
         expect(getSum([3])).to.equal(3);
         expect(getSum([-5])).to.equal(-5);
@@ -38,7 +38,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe.skip(".factorial", function () {
+    describe(".factorial", function () {
       it("returns the product of all positive integers less than or equal to n", function () {
         expect(factorial(0)).to.equal(1);
         expect(factorial(1)).to.equal(1);
@@ -49,7 +49,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe.skip(".reverse", function () {
+    describe(".reverse", function () {
       it("returns the string in reversed order", function () {
         expect(reverse("")).to.equal("");
         expect(reverse(" ")).to.equal(" ");
@@ -61,7 +61,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe.skip(".power", function () {
+    describe(".power", function () {
       it("returns a number to a specific power", function () {
         expect(power(2, 0)).to.equal(1);
         expect(power(2, 1)).to.equal(2);
@@ -76,7 +76,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe.skip(".isPalindrome", function () {
+    describe(".isPalindrome", function () {
       it("returns true/false for whether the given input is a palindrome", function () {
         expect(isPalindrome("")).to.be.true;
         expect(isPalindrome("a")).to.be.true;
@@ -90,7 +90,7 @@ describe("Recursion", function () {
   });
 
   context("Additional Practice", function () {
-    describe.skip(".upcase", function () {
+    describe(".upcase", function () {
       it("returns the string with all characters capitalized", function () {
         expect(upcase("")).to.equal("");
         expect(upcase(" ")).to.equal(" ");
@@ -102,16 +102,16 @@ describe("Recursion", function () {
       });
     });
 
-    describe.skip(".sumOfDigits", function () {
+    describe(".sumOfDigits", function () {
       it("returns the sum of all numbers from 1 to n (inclusive n)", function () {
         expect(sumOfDigits(5)).to.equal(15);
         expect(sumOfDigits(1)).to.equal(1);
         expect(sumOfDigits(9)).to.equal(45);
-        expect(sumOfDigits(-8)).to.be.undefined;
+        expect(sumOfDigits(-8)).to.be.null;
       });
     });
 
-    describe.skip(".inStock", function () {
+    describe(".inStock", function () {
       it("returns true/false for whether or not the shop offers the target ice cream flavor", function () {
         expect(inStock(["vanilla", "strawberry"], "blue moon")).to.be.false;
         expect(inStock(["pistachio", "green tea", "chocolate", "mint chip"], "green tea")).to.be.true;
@@ -122,16 +122,16 @@ describe("Recursion", function () {
     });
 
     context("Slightly More Challenging Problems", function () {
-      describe.skip(".findMax", function () {
+      describe(".findMax", function () {
         it("returns the max element in the array", function () {
-          expect(findMax([])).to.be.undefined;
+          expect(findMax([])).to.be.null;
           expect(findMax([8])).to.equal(8);
           expect(findMax([8, 3, 5, 1, 9])).to.equal(9);
           expect(findMax([8, 3, 5, 1, 9, 4, 7, 2, 10, 6])).to.equal(10);
         });
       });
 
-      describe.skip(".numberOfZeroes", function () {
+      describe(".numberOfZeroes", function () {
         it("returns the number of zeroes in the array", function () {
           expect(numberOfZeroes([])).to.equal(0);
           expect(numberOfZeroes([5, 5, 5])).to.equal(0);
@@ -142,7 +142,7 @@ describe("Recursion", function () {
         });
       });
 
-      describe.skip(".justPositives", function () {
+      describe(".justPositives", function () {
         it("returns the sum of all the positive integers", function () {
           expect(justPositives([])).to.equal(0);
           expect(justPositives([-1])).to.equal(0);
@@ -152,7 +152,7 @@ describe("Recursion", function () {
         });
       });
 
-      describe.skip(".numberOfOccurrences", function () {
+      describe(".numberOfOccurrences", function () {
         it("returns the number of occurrences of the target in the array", function () {
           expect(numberOfOccurrences([], "a")).to.equal(0);
           expect(numberOfOccurrences([], 1)).to.equal(0);
@@ -166,7 +166,7 @@ describe("Recursion", function () {
     });
 
     context("Challenging Problems", function () {
-      describe.skip(".fibonacci", function () {
+      describe(".fibonacci", function () {
         it("returns the nth number in the Fibonacci sequence", function () {
           expect(fibonacci(0)).to.equal(0);
           expect(fibonacci(1)).to.equal(1);

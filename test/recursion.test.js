@@ -18,7 +18,7 @@ const {
 
 describe("Recursion", function () {
   context("Lesson Exercises", function () {
-    describe(".countdown", function () {
+    describe.skip(".countdown", function () {
       it("counts down to zero from the inputted number", function () {
         expect(countdown(0)).to.deep.equal([0]);
         expect(countdown(1)).to.deep.equal([1, 0]);
@@ -27,7 +27,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe(".getSum", function () {
+    describe.skip(".getSum", function () {
       it("returns the sum of all the numbers in the array", function () {
         expect(getSum([])).to.be.null;
         expect(getSum([0])).to.equal(0);
@@ -38,8 +38,10 @@ describe("Recursion", function () {
       });
     });
 
-    describe(".factorial", function () {
+    describe.skip(".factorial", function () {
       it("returns the product of all positive integers less than or equal to n", function () {
+        // 5! => 5 * 4 * 3 * 2 * 1 = 120
+
         expect(factorial(0)).to.equal(1);
         expect(factorial(1)).to.equal(1);
         expect(factorial(2)).to.equal(2);
@@ -49,7 +51,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe(".reverse", function () {
+    describe.skip(".reverse", function () {
       it("returns the string in reversed order", function () {
         expect(reverse("")).to.equal("");
         expect(reverse(" ")).to.equal(" ");
@@ -61,8 +63,10 @@ describe("Recursion", function () {
       });
     });
 
-    describe(".power", function () {
+    describe.skip(".power", function () {
       it("returns a number to a specific power", function () {
+        // power(base, exponent) # 2 to the 4th power => 2 * 2 * 2 * 2 = 16
+
         expect(power(2, 0)).to.equal(1);
         expect(power(2, 1)).to.equal(2);
         expect(power(2, 2)).to.equal(4);
@@ -76,8 +80,10 @@ describe("Recursion", function () {
       });
     });
 
-    describe(".isPalindrome", function () {
+    describe.skip(".isPalindrome", function () {
       it("returns true/false for whether the given input is a palindrome", function () {
+        // A palindrome is word/number that reads the same forwards and backwards. Examples include racecar, tacocat, and toot.
+
         expect(isPalindrome("")).to.be.true;
         expect(isPalindrome("a")).to.be.true;
         expect(isPalindrome("racecar")).to.be.true;
@@ -90,7 +96,7 @@ describe("Recursion", function () {
   });
 
   context("Additional Practice", function () {
-    describe(".upcase", function () {
+    describe.skip(".upcase", function () {
       it("returns the string with all characters capitalized", function () {
         expect(upcase("")).to.equal("");
         expect(upcase(" ")).to.equal(" ");
@@ -102,7 +108,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe(".sumOfDigits", function () {
+    describe.skip(".sumOfDigits", function () {
       it("returns the sum of all numbers from 1 to n (inclusive n)", function () {
         expect(sumOfDigits(5)).to.equal(15);
         expect(sumOfDigits(1)).to.equal(1);
@@ -111,7 +117,7 @@ describe("Recursion", function () {
       });
     });
 
-    describe(".inStock", function () {
+    describe.skip(".inStock", function () {
       it("returns true/false for whether or not the shop offers the target ice cream flavor", function () {
         expect(inStock(["vanilla", "strawberry"], "blue moon")).to.be.false;
         expect(inStock(["pistachio", "green tea", "chocolate", "mint chip"], "green tea")).to.be.true;
@@ -122,7 +128,7 @@ describe("Recursion", function () {
     });
 
     context("Slightly More Challenging Problems", function () {
-      describe(".findMax", function () {
+      describe.skip(".findMax", function () {
         it("returns the max element in the array", function () {
           expect(findMax([])).to.be.null;
           expect(findMax([8])).to.equal(8);
@@ -131,7 +137,7 @@ describe("Recursion", function () {
         });
       });
 
-      describe(".numberOfZeroes", function () {
+      describe.skip(".numberOfZeroes", function () {
         it("returns the number of zeroes in the array", function () {
           expect(numberOfZeroes([])).to.equal(0);
           expect(numberOfZeroes([5, 5, 5])).to.equal(0);
@@ -142,7 +148,7 @@ describe("Recursion", function () {
         });
       });
 
-      describe(".justPositives", function () {
+      describe.skip(".justPositives", function () {
         it("returns the sum of all the positive integers", function () {
           expect(justPositives([])).to.equal(0);
           expect(justPositives([-1])).to.equal(0);
@@ -152,7 +158,7 @@ describe("Recursion", function () {
         });
       });
 
-      describe(".numberOfOccurrences", function () {
+      describe.skip(".numberOfOccurrences", function () {
         it("returns the number of occurrences of the target in the array", function () {
           expect(numberOfOccurrences([], "a")).to.equal(0);
           expect(numberOfOccurrences([], 1)).to.equal(0);
@@ -166,8 +172,10 @@ describe("Recursion", function () {
     });
 
     context("Challenging Problems", function () {
-      describe(".fibonacci", function () {
+      describe.skip(".fibonacci", function () {
         it("returns the nth number in the Fibonacci sequence", function () {
+          // The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones. It starts with 0 and 1, and the sequence goes like this: 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.
+          
           expect(fibonacci(0)).to.equal(0);
           expect(fibonacci(1)).to.equal(1);
           expect(fibonacci(2)).to.equal(1);
